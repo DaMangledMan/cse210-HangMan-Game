@@ -1,3 +1,12 @@
+/*
+Will store the current word that needs to be guessed.
+    Methods: 
+        setter:
+            to set the word to something random or a user input
+        getter:
+            to get the set word
+*/
+
 
 // Word_Class:
 class Word{
