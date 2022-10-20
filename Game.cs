@@ -7,7 +7,9 @@ Game_Class:
 
 class Game
 {
+        Word word = new Word ();
 
+         
 
 
 

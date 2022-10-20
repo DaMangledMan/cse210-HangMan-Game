@@ -42,5 +42,6 @@ Design:
                 returns a boolean for whether the game is over or not
     Game_Class:
         Runs the startup code
+            
         Runs the round method
         Runs the finish code

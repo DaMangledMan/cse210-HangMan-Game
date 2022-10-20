@@ -86,9 +86,10 @@ class Picture
         missed = new List<string> {missed0, missed1, missed2, missed3, missed4, missed5, missed6};
     }
 
-    public void setter()
+    public int setter()
     {
         this.currentPicture += 1;
+        return currentPicture;
     }
 
     public string getter()

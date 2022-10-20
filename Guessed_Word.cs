@@ -13,8 +13,11 @@
 
 class Guessed_Word
 {
-
+    // formatted ["_", "a", "_", "n", "_", "s", "_", "w", "_", "e", "_", "r"]
     List <string> guessed_word = new List <string> ();
+
+
+
 
     public void set_word(string word_)
     {
@@ -27,10 +30,21 @@ class Guessed_Word
         }
     }
 
+
     public void guess(string guess_)
     {
-        
+        for (int i = 1; i >= guessed_word.Count; i += 2)
+        {
+            if (guess_.ToLower() == guessed_word[i])
+            {
+                guessed_word[i-1] = guessed_word[i];
+            }
+        }
     }
 
 
+    public List<string> Getter()
+    {
+        return guessed_word;
+    }
 }
